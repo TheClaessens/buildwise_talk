@@ -103,6 +103,11 @@ codex plugin add mattpocock-skills@mattpocock
 <tr><td class="k">Review and QA</td><td><code>/code-review</code>, playtest agents with personas, one report</td></tr>
 </table>
 <p>Automatic mode: the orchestrator decides at every gate and you read the report at the end. Good for a redesign, a prototype, a throwaway experiment. Manual mode: it stops at each gate and nothing moves until you say so. For anything a client will see.</p>
+<div class="card hot"><h3>A starting point you can install today</h3>
+<p>The game skill is mine and tied to the game. So I put a generalised version in this repository: <a href="https://github.com/TheClaessens/buildwise_talk/tree/main/skills/orchestrated-build"><code>/orchestrated-build</code></a>. Same stages, same two gates, manual mode by default, and a fallback for every step where Matt’s skills aren’t installed. It’s a starting point, not a product: read the SKILL.md, then change the review standards to your own.</p>
+<pre>npx skills add TheClaessens/buildwise_talk
+# then, in a project:
+/orchestrated-build</pre></div>
 
 <h2><small>Staying in charge</small>Without reading the code</h2>
 <p>The workflow is a dial, and you set it per project.</p>
@@ -167,6 +172,7 @@ disable-model-invocation: true
 <tr><td class="k"><code>/notes-to-shareable-pdf</code></td><td>Turns my handwritten Notion notes into Faktion-branded PDFs, without the usual Claude-isms.</td></tr>
 <tr><td class="k"><code>/cinematic-motion-deck</code></td><td>Layout and animation for the slides you saw. Not responsible for the content.</td></tr>
 <tr><td class="k"><code>orchestrated-game-dev</code></td><td>The factory: decide, contract, build in parallel, verify. One SKILL.md and a few reference files.</td></tr>
+<tr><td class="k"><code>/orchestrated-build</code></td><td>The generalised factory, public, in this repository. Start there.</td></tr>
 <tr><td class="k"><code>/game-playtest</code></td><td>Personas with bot hands. A library of fourteen playtesters, a brief, a report format.</td></tr>
 </table>
 

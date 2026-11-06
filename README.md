@@ -6,6 +6,7 @@ Standalone export of the talk (7 November 2026). Works offline, and is ready to 
 - `handout.html` the handout (English). `handout.nl.html` and `handout.fr.html` are machine-translated and unreviewed.
 - `linked/` the three documents the slides link to, bundled offline.
 - `assets/` the three gameplay videos. Everything else (fonts, images) is embedded.
+- `skills/` starting points to install in your own projects: `npx skills add TheClaessens/buildwise_talk`. See `skills/README.md`.
 
 To publish on GitHub Pages: put these files in a repository, then Settings → Pages → deploy from branch, root folder. The site is served at `https://<owner>.github.io/<repo>/`.
 

@@ -103,6 +103,11 @@ codex plugin add mattpocock-skills@mattpocock
 <tr><td class="k">Revue et QA</td><td><code>/code-review</code>, agents de playtest avec personas, un seul rapport</td></tr>
 </table>
 <p>Mode automatique : l’orchestrateur décide à chaque porte et vous lisez le rapport à la fin. Bien pour une refonte, un prototype, une expérience jetable. Mode manuel : il s’arrête à chaque porte et rien ne bouge tant que vous ne le dites pas. Pour tout ce qu’un client verra.</p>
+<div class="card hot"><h3>Un point de départ à installer dès aujourd’hui</h3>
+<p>Le skill du jeu est à moi et lié au jeu. J’ai donc mis une version généralisée dans ce dépôt : <a href="https://github.com/TheClaessens/buildwise_talk/tree/main/skills/orchestrated-build"><code>/orchestrated-build</code></a>. Mêmes phases, mêmes deux portes, mode manuel par défaut, et un plan B pour chaque étape où les skills de Matt ne sont pas installés. C’est un point de départ, pas un produit : lisez le SKILL.md, puis remplacez les standards de revue par les vôtres.</p>
+<pre>npx skills add TheClaessens/buildwise_talk
+# ensuite, dans un projet :
+/orchestrated-build</pre></div>
 
 <h2><small>Garder la main</small>Sans lire le code</h2>
 <p>Le workflow est un curseur, et vous le réglez par projet.</p>
@@ -167,6 +172,7 @@ disable-model-invocation: true
 <tr><td class="k"><code>/notes-to-shareable-pdf</code></td><td>Transforme mes notes Notion manuscrites en PDF aux couleurs de Faktion, sans les tics habituels de Claude.</td></tr>
 <tr><td class="k"><code>/cinematic-motion-deck</code></td><td>Mise en page et animation des slides que vous avez vues. Pas responsable du contenu.</td></tr>
 <tr><td class="k"><code>orchestrated-game-dev</code></td><td>L’usine : décider, contrat, construire en parallèle, vérifier. Un SKILL.md et quelques fichiers de référence.</td></tr>
+<tr><td class="k"><code>/orchestrated-build</code></td><td>L’usine généralisée, publique, dans ce dépôt. Commencez par là.</td></tr>
 <tr><td class="k"><code>/game-playtest</code></td><td>Des personas avec des mains de bot. Une bibliothèque de quatorze playtesters, un brief, un format de rapport.</td></tr>
 </table>
 

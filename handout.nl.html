@@ -103,6 +103,11 @@ codex plugin add mattpocock-skills@mattpocock
 <tr><td class="k">Review en QA</td><td><code>/code-review</code>, playtest-agents met persona’s, één rapport</td></tr>
 </table>
 <p>Automatische modus: de orchestrator beslist bij elke gate en jij leest op het einde het rapport. Goed voor een redesign, een prototype, een wegwerpexperiment. Manuele modus: ze stopt bij elke gate en niets beweegt tot jij het zegt. Voor alles wat een klant te zien krijgt.</p>
+<div class="card hot"><h3>Een startpunt dat je vandaag kunt installeren</h3>
+<p>De game-skill is van mij en zit vast aan de game. Daarom staat er een veralgemeende versie in deze repository: <a href="https://github.com/TheClaessens/buildwise_talk/tree/main/skills/orchestrated-build"><code>/orchestrated-build</code></a>. Dezelfde fases, dezelfde twee gates, standaard manuele modus, en een fallback voor elke stap waar de skills van Matt niet geïnstalleerd zijn. Het is een startpunt, geen product: lees de SKILL.md en vervang de review-standaarden door die van jou.</p>
+<pre>npx skills add TheClaessens/buildwise_talk
+# daarna, in een project:
+/orchestrated-build</pre></div>
 
 <h2><small>De regie houden</small>Zonder de code te lezen</h2>
 <p>De workflow is een draaiknop, en jij stelt hem per project in.</p>
@@ -167,6 +172,7 @@ disable-model-invocation: true
 <tr><td class="k"><code>/notes-to-shareable-pdf</code></td><td>Maakt van mijn handgeschreven Notion-notities PDF’s in Faktion-huisstijl, zonder de gebruikelijke Claude-ismen.</td></tr>
 <tr><td class="k"><code>/cinematic-motion-deck</code></td><td>Lay-out en animatie van de slides die je zag. Niet verantwoordelijk voor de inhoud.</td></tr>
 <tr><td class="k"><code>orchestrated-game-dev</code></td><td>De fabriek: beslissen, contract, parallel bouwen, verifiëren. Eén SKILL.md en een paar referentiebestanden.</td></tr>
+<tr><td class="k"><code>/orchestrated-build</code></td><td>De veralgemeende fabriek, publiek, in deze repository. Begin daar.</td></tr>
 <tr><td class="k"><code>/game-playtest</code></td><td>Persona’s met bot-handen. Een bibliotheek van veertien playtesters, een briefing, een rapportformaat.</td></tr>
 </table>
 
